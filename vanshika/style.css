@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+body {
+    background-image: url('images/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.wild{
+color: white;
+display: flex;
+font-size: 96px;
+font-family: "Joti One", serif;
+justify-content: right;
+align-items: right;
+padding-top: 25vh;
+padding-right: 10vh;
+}
+
+.your{
+    color: white;
+display: flex;
+font-size: 36px;
+font-family: "Joti One", serif;
+justify-content: right;
+align-items: right;
+
+padding-right: 10vh;
+}
+
+.hub{
+    color: black;
+}
+
+.arrow{
+    color: white;
+    
+    position: fixed; /* or absolute depending on your needs */
+    bottom: 0;
+    right: 0;
+    height: 2rem;
+    width: 2rem;
+    background: transparent;
+    border: .2rem solid black;
+    border-radius: 50%;
+    font-size: 2rem;
+    
+    transition: 0.5s ease;
+    
+}
+
+.arrow:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.arrow, .arrow:visited {
+    color: black; /* or any color you want */
+    /* other styles... */
+}
