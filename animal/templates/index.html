@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Prediction</title>
+    <script
+      defer="defer"
+      src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+    
+    <div class="logsignin">
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    
+    </div>
+
+    <div id="content" style="display:none;">
+
+        <div class="form">
+            <form action="/uploads" method="post" enctype="multipart/form-data">
+                <input type="file" id="rlbtn" name="image" accept="image/*,video/*" required>
+                <span id="vltxt">LOL</span>
+                <button type="submit" id="vlbtn" value="Choose files">Choose File</button>
+                <button type="submit" value="Upload">Upload</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
